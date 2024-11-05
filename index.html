@@ -17,13 +17,17 @@
     margin-bottom: 20px;
   }
   .about-section img {
-    width: 200px; /* Adjust the size as needed */
+    width: 200px; /* Ajustez la taille selon vos besoins */
     height: 200px;
-    border-radius: 50%; /* Makes the image round */
+    border-radius: 50%; /* Rend l'image ronde */
     margin-bottom: 20px;
   }
   .about-section p {
     color: #333;
+    text-align: justify; /* Justifie le texte pour avoir des bords droits */
+    max-width: 1000px; /* Limite la largeur du texte pour une meilleure lisibilité */
+    margin: 0 auto;
+    margin-bottom: 20px; /* Centre le texte dans la section */
   }
 
   /* Additional CSS for Projects Section */
@@ -32,7 +36,10 @@
   font-size: 2.5rem;
 }
 .card {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Adds a subtle shadow around the card */
 }
 .card-img-top {
   max-height: 180px; /* Adjust this value to fit the image properly in the card */
@@ -40,44 +47,19 @@
 }
 .card-body {
   padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card-title {
   font-size: 1.25rem;
 }
 .card-text {
   margin-bottom: 15px;
+  min-height: 150px;
 }
 
-/* Additional CSS for Skills Section */
-.skills-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.skills-section .card-img-top {
-  padding: 20px; /* Add padding around your images if needed */
-  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-  height: 180px; /* Fixed height for consistency */
-  object-fit: contain; /* This will make sure the image is scaled properly within the container */
-}
-.skills-section .card-body {
-  padding: 15px;
-}
-.skills-section .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-}
-.skills-section .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
-}
-.skills-section .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
 
 /* Additional CSS for Contact Section */
 .contact-section {
@@ -152,7 +134,7 @@ html {
     <h2>About</h2>
     <img src="images/about/1.jpg" alt="About Me">
     <p>
-      Ingénieur spécialisé en <strong>Mathématiques Appliquées</strong>, passionné par les domaines de la <strong>Data Science</strong> et de l'<strong>Intelligence Artificielle</strong>, je suis actuellement en recherche d'une opportunité professionnelle en CDI. Fort de plusieurs expériences en tant que <strong>Data Scientist</strong> et développeur, j'ai développé une solide expertise en <strong>Machine Learning</strong>, <strong>NLP</strong> (Natural Language Processing), et <strong>analyse de données massives</strong>.
+      Je m'appelle <strong>Adrien Montaigne</strong>, ingénieur spécialisé en <strong>Mathématiques Appliquées</strong>, passionné par les domaines de la <strong>Data Science</strong> et de l'<strong>Intelligence Artificielle</strong>, je suis actuellement en recherche d'une opportunité professionnelle en CDI. Fort de plusieurs expériences en tant que <strong>Data Scientist</strong> et développeur, j'ai développé une solide expertise en <strong>Machine Learning</strong>, <strong>NLP</strong> (Natural Language Processing), et <strong>analyse de données massives</strong>.
   </p>
   <p>
       Lors de mes missions chez <strong>BNP Paribas</strong> et <strong>Equanimity</strong>, j'ai pu mettre en œuvre des <strong>modèles prédictifs avancés</strong>, concevoir des solutions de <strong>traitement du langage naturel</strong>, et optimiser des <strong>flux de données</strong> pour des environnements complexes. Mon parcours académique à <strong>CY-Tech</strong> et un semestre d'échange à <strong>Anglia Ruskin University</strong> ont renforcé mes compétences en <strong>statistiques</strong> et en <strong>programmation</strong>, me permettant de mener à bien des projets variés, de l’<strong>analyse de sentiment</strong> à la <strong>prédiction de consommations de stockage</strong>.
@@ -200,6 +182,44 @@ html {
             <h5 class="card-title">Projet de Reconnaissance de Sports Basée sur la Détection de Mouvements en Vidéo </h5>
             <p class="card-text">L'objectif de ce projet est de <strong>reconnaître automatiquement le sport pratiqué</strong> dans une vidéo en se basant uniquement sur les <strong>mouvements des participants</strong>. </p>
             <a href="https://github.com/Jasydom/SportRec" class="btn btn-primary">Code Source</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/4.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Projet de Prédiction du Diabète</h5>
+            <p class="card-text">Ce projet utilise des techniques avancées de machine learning, telles que l'apprentissage par ensemble et des algorithmes variés comme <strong>Random Forest</strong>, <strong>Régression Logistique</strong>, et <strong>SVM</strong> pour prédire le diabète. En explorant différentes métriques de performance et en testant plusieurs modèles, l'objectif est d'obtenir une prédiction optimale et de comprendre les facteurs qui influencent le risque de diabète.</p>
+            <a href="https://github.com/Jasydom/MLDiabetes" class="btn btn-primary">Code Source</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/5.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Projet d'Extraction de EPS</h5>
+            <p class="card-text">Ce projet vise à extraire les données de Bénéfice Par Action (EPS) de rapports financiers en HTML à l'aide de techniques de web scraping et de regex. En utilisant <strong>BeautifulSoup</strong> pour le parsing HTML et une série de modèles regex pour identifier les valeurs EPS, l'objectif est de développer une méthode fiable pour extraire ces informations financières. Ce travail explore également les défis liés à la diversité des structures HTML dans les fichiers financiers et propose des pistes pour améliorer la précision de l'extraction.</p>
+            <a href="https://github.com/Jasydom/ScrapingEPS" class="btn btn-primary">Code Source</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/6.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Classification d'Images Réelles vs Générées par IA </h5>
+            <p class="card-text">Ce projet vise à développer un modèle capable de distinguer les images réelles des images générées par IA. 
+              En utilisant le jeu de données CASIA de Kaggle, le modèle s’appuie sur l’<strong>Analyse de Niveau d'Erreur (ELA)</strong> pour exposer les différences subtiles souvent présentes dans les images générées ou altérées par IA.
+              Les techniques d’<strong>augmentation de données</strong> et l’<strong>apprentissage par transfert</strong> sont également utilisés pour améliorer la performance du modèle malgré les contraintes de ressources. </p>
+            <a href="https://github.com/Jasydom/DeepDetect" class="btn btn-primary">Code Source</a>
           </div>
         </div>
       </div>
