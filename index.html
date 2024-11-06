@@ -58,6 +58,10 @@
 .card-text {
   margin-bottom: 15px;
   min-height: 150px;
+  text-align: justify;
+}
+h2.text-center {
+  padding-top: 30px; /* Ajustez la valeur pour l'espace souhaité */
 }
 
 
@@ -128,7 +132,10 @@ html {
 
 </head>
 <body>
-
+<section id="home">
+  <!-- Contenu de la section Home -->
+</section>
+  
 <section id='about' class="about-section">
   <div class="container">
     <h2>About</h2>
@@ -154,15 +161,16 @@ html {
       <!-- Project 1 -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+          <img src="images/projects/6.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
-            <h5 class="card-title">Projet de Prédiction de la Survie sur le Titanic</h5>
-            <p class="card-text">Ce projet explore et analyse l’utilisation de l'algorithme de machine learning comme <strong>RandomForest</strong> pour prédire la survie des passagers du Titanic. En se concentrant sur l’application et les performances de ce modèle, l'objectif est de comprendre comment différents facteurs influencent les chances de survie.</p>
-            <a href="https://github.com/Jasydom/TitanicRandomForest" class="btn btn-primary">Code Source</a>
-
+            <h5 class="card-title">Classification d'Images Réelles vs Générées par IA </h5>
+            <p class="card-text">Ce projet vise à développer un modèle capable de distinguer les images réelles des images générées par IA. 
+              Les techniques d’<strong>augmentation de données</strong> et l’<strong>apprentissage par transfert</strong> sont également utilisés pour améliorer la performance du modèle malgré les contraintes de ressources. </p>
+            <a href="https://github.com/Jasydom/DeepDetect" class="btn btn-primary">Code Source</a>
           </div>
         </div>
       </div>
+      
       <!-- Project 2 -->
       <div class="col-md-4 mb-4">
         <div class="card">
@@ -180,17 +188,18 @@ html {
           <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
             <h5 class="card-title">Projet de Reconnaissance de Sports Basée sur la Détection de Mouvements en Vidéo </h5>
-            <p class="card-text">L'objectif de ce projet est de <strong>reconnaître automatiquement le sport pratiqué</strong> dans une vidéo en se basant uniquement sur les <strong>mouvements des participants</strong>. </p>
+            <p class="card-text">L'objectif de ce projet est de <strong>reconnaître automatiquement le sport pratiqué</strong> dans une vidéo en se basant uniquement sur les <strong>mouvements des participants</strong>. Pour ce projet, nous avons utilisé des <strong>CNN</strong> pour extraire les caractéristiques spatiales des mouvements, suivis de <strong>RNN</strong> pour capturer les dynamiques temporelles et ainsi reconnaître le sport pratiqué dans la vidéo.</p>
+
             <a href="https://github.com/Jasydom/SportRec" class="btn btn-primary">Code Source</a>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <!-- Project 1 -->
+      <!-- Project 4 -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/projects/4.jpg" class="card-img-top" alt="Project 1">
+          <img src="images/projects/4.jpg" class="card-img-top" alt="Project 4">
           <div class="card-body">
             <h5 class="card-title">Projet de Prédiction du Diabète</h5>
             <p class="card-text">Ce projet utilise des techniques avancées de machine learning, telles que l'apprentissage par ensemble et des algorithmes variés comme <strong>Random Forest</strong>, <strong>Régression Logistique</strong>, et <strong>SVM</strong> pour prédire le diabète. En explorant différentes métriques de performance et en testant plusieurs modèles, l'objectif est d'obtenir une prédiction optimale et de comprendre les facteurs qui influencent le risque de diabète.</p>
@@ -199,10 +208,10 @@ html {
           </div>
         </div>
       </div>
-      <!-- Project 2 -->
+      <!-- Project 5 -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/projects/5.jpg" class="card-img-top" alt="Project 2">
+          <img src="images/projects/5.jpg" class="card-img-top" alt="Project 5">
           <div class="card-body">
             <h5 class="card-title">Projet d'Extraction de EPS</h5>
             <p class="card-text">Ce projet vise à extraire les données de Bénéfice Par Action (EPS) de rapports financiers en HTML à l'aide de techniques de web scraping et de regex. En utilisant <strong>BeautifulSoup</strong> pour le parsing HTML et une série de modèles regex pour identifier les valeurs EPS, l'objectif est de développer une méthode fiable pour extraire ces informations financières.</p>
@@ -210,18 +219,19 @@ html {
           </div>
         </div>
       </div>
-      <!-- Project 3 -->
+      <!-- Project 5 -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/projects/6.jpg" class="card-img-top" alt="Project 3">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 5">
           <div class="card-body">
-            <h5 class="card-title">Classification d'Images Réelles vs Générées par IA </h5>
-            <p class="card-text">Ce projet vise à développer un modèle capable de distinguer les images réelles des images générées par IA. 
-              Les techniques d’<strong>augmentation de données</strong> et l’<strong>apprentissage par transfert</strong> sont également utilisés pour améliorer la performance du modèle malgré les contraintes de ressources. </p>
-            <a href="https://github.com/Jasydom/DeepDetect" class="btn btn-primary">Code Source</a>
+            <h5 class="card-title">Projet de Prédiction de la Survie sur le Titanic</h5>
+            <p class="card-text">Ce projet explore et analyse l’utilisation de l'algorithme de machine learning comme <strong>RandomForest</strong> pour prédire la survie des passagers du Titanic. En se concentrant sur l’application et les performances de ce modèle, l'objectif est de comprendre comment différents facteurs influencent les chances de survie.</p>
+            <a href="https://github.com/Jasydom/TitanicRandomForest" class="btn btn-primary">Code Source</a>
+
           </div>
         </div>
       </div>
+      
     </div>
 
   </div>
