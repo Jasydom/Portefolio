@@ -8,27 +8,49 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <style>
-  .about-section {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .about-section img {
-    width: 200px; /* Ajustez la taille selon vos besoins */
-    height: 200px;
-    border-radius: 50%; /* Rend l'image ronde */
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    color: #333;
-    text-align: justify; /* Justifie le texte pour avoir des bords droits */
-    max-width: 1000px; /* Limite la largeur du texte pour une meilleure lisibilité */
-    margin: 0 auto;
-    margin-bottom: 20px; /* Centre le texte dans la section */
-  }
+
+#bouton {
+
+ /* Ajuste la hauteur */
+  background-color: #007bff; /* Couleur de fond bleue */
+  color: white; /* Texte en blanc */
+  border: 2px solid white; /* Bordure blanche pour contraste */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 8px 16px; /* Ajuste l'espacement interne */
+  font-weight: bold; /* Texte plus épais */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+  cursor: pointer; /* Change le curseur au survol */
+  transition: all 0.3s ease; /* Effet de transition fluide */
+}
+
+#bouton:hover {
+  background-color: white; /* Fond blanc au survol */
+  color: #007bff; /* Texte bleu au survol */
+  border-color: #007bff; /* Bordure bleue au survol */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
+.about-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about-section img {
+  width: 200px; /* Ajustez la taille selon vos besoins */
+  height: 200px;
+  border-radius: 50%; /* Rend l'image ronde */
+  margin-bottom: 20px;
+}
+.about-section p {
+  color: #333;
+  text-align: justify; /* Justifie le texte pour avoir des bords droits */
+  max-width: 1000px; /* Limite la largeur du texte pour une meilleure lisibilité */
+  margin: 0 auto;
+  margin-bottom: 20px; /* Centre le texte dans la section */
+}
 
   /* Additional CSS for Projects Section */
 .projects-section h2 {
@@ -119,6 +141,7 @@ html {
 .navbar-nav .nav-link:hover {
   color: #f8f9fa; /* Slightly lighter white when hovering over links */
 }
+  
 
 /* Media query for responsive navbar collapsing */
 @media (max-width: 992px) {
@@ -135,22 +158,24 @@ html {
 <section id="home">
   <!-- Contenu de la section Home -->
 </section>
-  
-<section id='about' class="about-section">
+
+<section id='about' class="about-section text-center">
   <div class="container">
-    <h2>About</h2>
+    <h2>Bienvenue sur mon Portefolio</h2>
     <img src="images/about/1.jpg" alt="About Me">
     <p>
-      Je m'appelle <strong>Adrien Montaigne</strong>, ingénieur spécialisé en <strong>Mathématiques Appliquées</strong>, passionné par les domaines de la <strong>Data Science</strong> et de l'<strong>Intelligence Artificielle</strong>, je suis actuellement en recherche d'une opportunité professionnelle en CDI. Fort de plusieurs expériences en tant que <strong>Data Scientist</strong> et développeur, j'ai développé une solide expertise en <strong>Machine Learning</strong>, <strong>NLP</strong> (Natural Language Processing), et <strong>analyse de données massives</strong>.
-  </p>
-  <p>
-      Lors de mes missions chez <strong>BNP Paribas</strong> et <strong>Equanimity</strong>, j'ai pu mettre en œuvre des <strong>modèles prédictifs avancés</strong>, concevoir des solutions de <strong>traitement du langage naturel</strong>, et optimiser des <strong>flux de données</strong> pour des environnements complexes. Mon parcours académique à <strong>CY-Tech</strong> et un semestre d'échange à <strong>Anglia Ruskin University</strong> ont renforcé mes compétences en <strong>statistiques</strong> et en <strong>programmation</strong>, me permettant de mener à bien des projets variés, de l’<strong>analyse de sentiment</strong> à la <strong>prédiction de consommations de stockage</strong>.
-  </p>
-  <p>
-      Motivé par le désir d'apporter des <strong>solutions innovantes</strong>, je recherche un poste où je pourrais continuer à évoluer, collaborer avec des équipes pluridisciplinaires, et appliquer mes <strong>compétences techniques</strong> pour répondre aux besoins stratégiques d'une entreprise.
-  </p>
+      Je m'appelle Adrien Montaigne, ingénieur spécialisé en Mathématiques Appliquées, passionné par les domaines de la Data Science et de l'Intelligence Artificielle, je suis actuellement en recherche d'une opportunité professionnelle en CDI. Fort de plusieurs expériences en tant que Data Scientist et développeur, j'ai développé une solide expertise en Machine Learning, NLP (Natural Language Processing), et analyse de données massives.
+    </p>
+    <p>
+        Lors de mes missions chez BNP Paribas et Equanimity, j'ai pu mettre en œuvre des modèles prédictifs avancés, concevoir des solutions de traitement du langage naturel, et optimiser des flux de données pour des environnements complexes. Mon parcours académique à CY-Tech et un semestre d'échange à Anglia Ruskin University ont renforcé mes compétences en statistiques et en programmation, me permettant de mener à bien des projets variés, de l’analyse de sentiment à la prédiction de consommations de stockage.
+    </p>
+    <p>
+        Motivé par le désir d'apporter des solutions innovantes, je recherche un poste où je pourrais continuer à évoluer, collaborer avec des équipes pluridisciplinaires, et appliquer mes compétences techniques pour répondre aux besoins stratégiques d'une entreprise.
+    </p>
+  
   </div>
 </section>
+
 
 
 <!-- Projects Section -->
@@ -163,9 +188,9 @@ html {
         <div class="card">
           <img src="images/projects/6.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
-            <h5 class="card-title">Classification d'Images Réelles vs Générées par IA </h5>
-            <p class="card-text">Ce projet vise à développer un modèle capable de distinguer les images réelles des images générées par IA. 
-              Les techniques d’<strong>augmentation de données</strong> et l’<strong>apprentissage par transfert</strong> sont également utilisés pour améliorer la performance du modèle malgré les contraintes de ressources. </p>
+            <h5 class="card-title">Classification d'Images Réelles vs Générées par IA</h5>
+            <p class="card-text">Ce projet vise à développer un modèle capable de distinguer les images réelles des images générées par IA. Dans le cadre de ce projet, j'ai conçu un modèle CNN (Convolutional Neural Network) à partir de zéro et effectué une optimisation des hyperparamètres. En complément, j'ai également développé un second modèle basé sur le transfert d'apprentissage à partir d'une architecture ResNet.</p>
+
             <a href="https://github.com/Jasydom/DeepDetect" class="btn btn-primary">Code Source</a>
           </div>
         </div>
@@ -177,7 +202,7 @@ html {
           <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
           <div class="card-body">
             <h5 class="card-title">Projet d'Analyse de Sentiment sur les Vaccins</h5>
-            <p class="card-text">Ce projet vise à analyser le <strong>sentiment public</strong> à propos de différents vaccins en utilisant divers paramètres tels que les <strong>hashtags</strong>, la <strong>popularité</strong>, le <strong>statut de vérification des utilisateurs</strong>, et l’<strong>engagement des tweets</strong>. L'objectif est d'identifier les caractéristiques des principaux utilisateurs et de mesurer le sentiment général de l'opinion publique sur chaque vaccin.</p>
+            <p class="card-text">Ce projet vise à analyser le sentiment public à propos de différents vaccins en utilisant divers paramètres tels que les hashtags, la popularité, le statut de vérification des utilisateurs, et l’engagement des tweets. L'objectif est d'identifier les caractéristiques des principaux utilisateurs et de mesurer le sentiment général de l'opinion publique sur chaque vaccin.</p>
             <a href="https://github.com/Jasydom/VaxTweetSentiment" class="btn btn-primary">Code Source</a>
           </div>
         </div>
@@ -188,7 +213,7 @@ html {
           <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
             <h5 class="card-title">Projet de Reconnaissance de Sports Basée sur la Détection de Mouvements en Vidéo </h5>
-            <p class="card-text">L'objectif de ce projet est de <strong>reconnaître automatiquement le sport pratiqué</strong> dans une vidéo en se basant uniquement sur les <strong>mouvements des participants</strong>. Pour ce projet, nous avons utilisé des <strong>CNN</strong> pour extraire les caractéristiques spatiales des mouvements, suivis de <strong>RNN</strong> pour capturer les dynamiques temporelles et ainsi reconnaître le sport pratiqué dans la vidéo.</p>
+            <p class="card-text">L'objectif de ce projet est de reconnaître automatiquement le sport pratiqué dans une vidéo en se basant uniquement sur les mouvements des participants. Pour ce projet, nous avons utilisé des CNN pour extraire les caractéristiques spatiales des mouvements, suivis de RNN pour capturer les dynamiques temporelles et ainsi reconnaître le sport pratiqué dans la vidéo.</p>
 
             <a href="https://github.com/Jasydom/SportRec" class="btn btn-primary">Code Source</a>
           </div>
@@ -202,7 +227,7 @@ html {
           <img src="images/projects/4.jpg" class="card-img-top" alt="Project 4">
           <div class="card-body">
             <h5 class="card-title">Projet de Prédiction du Diabète</h5>
-            <p class="card-text">Ce projet utilise des techniques avancées de machine learning, telles que l'apprentissage par ensemble et des algorithmes variés comme <strong>Random Forest</strong>, <strong>Régression Logistique</strong>, et <strong>SVM</strong> pour prédire le diabète. En explorant différentes métriques de performance et en testant plusieurs modèles, l'objectif est d'obtenir une prédiction optimale et de comprendre les facteurs qui influencent le risque de diabète.</p>
+            <p class="card-text">Ce projet utilise des techniques avancées de machine learning, telles que l'apprentissage par ensemble et des algorithmes variés comme Random Forest, Régression Logistique, et SVM pour prédire le diabète. En explorant différentes métriques de performance et en testant plusieurs modèles, l'objectif est d'obtenir une prédiction optimale et de comprendre les facteurs qui influencent le risque de diabète.</p>
             <a href="https://github.com/Jasydom/MLDiabetes" class="btn btn-primary">Code Source</a>
 
           </div>
@@ -214,84 +239,67 @@ html {
           <img src="images/projects/5.jpg" class="card-img-top" alt="Project 5">
           <div class="card-body">
             <h5 class="card-title">Projet d'Extraction de EPS</h5>
-            <p class="card-text">Ce projet vise à extraire les données de Bénéfice Par Action (EPS) de rapports financiers en HTML à l'aide de techniques de web scraping et de regex. En utilisant <strong>BeautifulSoup</strong> pour le parsing HTML et une série de modèles regex pour identifier les valeurs EPS, l'objectif est de développer une méthode fiable pour extraire ces informations financières.</p>
+            <p class="card-text">Ce projet vise à extraire les données de Bénéfice Par Action (EPS) de rapports financiers en HTML à l'aide de techniques de web scraping et de regex. En utilisant BeautifulSoup pour le parsing HTML et une série de modèles regex pour identifier les valeurs EPS, l'objectif est de développer une méthode fiable pour extraire ces informations financières.</p>
             <a href="https://github.com/Jasydom/ScrapingEPS" class="btn btn-primary">Code Source</a>
           </div>
         </div>
       </div>
-      <!-- Project 5 -->
+      <!-- Project 6 -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 5">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 6">
           <div class="card-body">
             <h5 class="card-title">Projet de Prédiction de la Survie sur le Titanic</h5>
-            <p class="card-text">Ce projet explore et analyse l’utilisation de l'algorithme de machine learning comme <strong>RandomForest</strong> pour prédire la survie des passagers du Titanic. En se concentrant sur l’application et les performances de ce modèle, l'objectif est de comprendre comment différents facteurs influencent les chances de survie.</p>
+            <p class="card-text">Ce projet explore et analyse l’utilisation de l'algorithme de machine learning comme RandomForest pour prédire la survie des passagers du Titanic. En se concentrant sur l’application et les performances de ce modèle, l'objectif est de comprendre comment différents facteurs influencent les chances de survie.</p>
             <a href="https://github.com/Jasydom/TitanicRandomForest" class="btn btn-primary">Code Source</a>
 
           </div>
         </div>
       </div>
-      
     </div>
-
-  </div>
-</section>
-
-
-<!-- Skills Section -->
-<!--<section id="skills" class="skills-section bg-white" id="skills">
-  <div class="container">
-    <h2 class="text-center">Skills</h2>
     <div class="row">
-       Skill 1 
-      <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Project 7 -->
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/skills/1.png" class="card-img-top" alt="Python">
+          <img src="images/projects/7.jpg" class="card-img-top" alt="Project 7">
           <div class="card-body">
-            <h5 class="card-title">Python</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+            <h5 class="card-title">Projet d'Optimisation de Livraison de Pizza</h5>
+            <p class="card-text">Ce projet vise à maximiser les livraisons de pizzas en modélisant une ville comme une grille NxN. En appliquant des concepts de théorie des graphes et des algorithmes optimisés, il identifie le bloc recevant le plus de livraisons dans un grand réseau urbain. L'accent est mis sur la réduction de la complexité pour traiter efficacement de vastes ensembles de données.</p>
+            <a href="https://github.com/Jasydom/livery-pizzeria" class="btn btn-primary">Code Source</a>
+
           </div>
         </div>
       </div>
-      Skill 2
-      <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Project 8 -->
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+          <img src="images/projects/8.jpg" class="card-img-top" alt="Project 8">
           <div class="card-body">
-            <h5 class="card-title">Data Visualization</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+            <h5 class="card-title">Projet d'Optimisation Métaheuristique</h5>
+            <p class="card-text">Ce projet vise à optimiser la répartition des tâches dans un réseau distribué en utilisant des algorithmes métaheuristiques comme Firefly ou PSO. Basé sur des données de coûts et de temps d'exécution pour chaque tâche et nœud, l’objectif est de minimiser les ressources nécessaires tout en maximisant l’efficacité.</p>
+            <a href="https://github.com/Jasydom/Fireflymeta" class="btn btn-primary">Code Source</a>
           </div>
         </div>
       </div>
-      Skill 3
-      <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Project 9 -->
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+          <img src="images/projects/9.jpg" class="card-img-top" alt="Project 9">
           <div class="card-body">
-            <h5 class="card-title">SQL</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+            <h5 class="card-title">Projet de Détection de Fake News </h5>
+            <p class="card-text">Ce projet utilise des modèles NLP comme DistilBERT, BERT, RNN et LSTM pour détecter les fake news à partir de divers datasets. En exploitant des techniques avancées de preprocessing et de fine-tuning, l'objectif est d'améliorer la précision et la robustesse des modèles face à des données variées et complexes.</p>
+            <a href="https://github.com/Jasydom/FakeNewsNLP" class="btn btn-primary">Code Source</a>
+
           </div>
         </div>
-      </div>
-      Skill 4
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
-          <div class="card-body">
-            <h5 class="card-title">Data Storytelling</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
+      </div> 
     </div>
   </div>
 </section>
 
-Contact Me Section -->
+
+
+<!---Contact Me Section -->
 <section id="contact" class="contact-section text-center text-white bg-dark">
   <div class="container">
     <h2>Contact Me</h2>
@@ -329,6 +337,9 @@ Contact Me Section -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-outline-light btn-sm ml-2" onclick="location.href='index_en.html'" id="bouton">English</button>
         </li>
       </ul>
     </div>

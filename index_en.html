@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+
+#bouton {
+
+ /* Ajuste la hauteur */
+  background-color: #007bff; /* Couleur de fond bleue */
+  color: white; /* Texte en blanc */
+  border: 2px solid white; /* Bordure blanche pour contraste */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 8px 16px; /* Ajuste l'espacement interne */
+  font-weight: bold; /* Texte plus épais */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+  cursor: pointer; /* Change le curseur au survol */
+  transition: all 0.3s ease; /* Effet de transition fluide */
+}
+
+#bouton:hover {
+  background-color: white; /* Fond blanc au survol */
+  color: #007bff; /* Texte bleu au survol */
+  border-color: #007bff; /* Bordure bleue au survol */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
+.about-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about-section img {
+  width: 200px; /* Ajustez la taille selon vos besoins */
+  height: 200px;
+  border-radius: 50%; /* Rend l'image ronde */
+  margin-bottom: 20px;
+}
+.about-section p {
+  color: #333;
+  text-align: justify; /* Justifie le texte pour avoir des bords droits */
+  max-width: 1000px; /* Limite la largeur du texte pour une meilleure lisibilité */
+  margin: 0 auto;
+  margin-bottom: 20px; /* Centre le texte dans la section */
+}
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+  min-height: 150px;
+  text-align: justify;
+}
+h2.text-center {
+  padding-top: 30px; /* Ajustez la valeur pour l'espace souhaité */
+}
+
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+  
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+<section id="home">
+  <!-- Contenu de la section Home -->
+</section>
+
+<section id='about' class="about-section text-center">
+    <div class="container">
+      <h2>Welcome to my Portfolio</h2>
+      <img src="images/about/1.jpg" alt="About Me">
+      <p>
+        My name is Adrien Montaigne, an engineer specialized in Applied Mathematics. Passionate about Data Science and Artificial Intelligence, I am currently seeking a permanent position. With significant experience as a Data Scientist and developer, I have developed strong expertise in Machine Learning, NLP (Natural Language Processing), and Big Data analysis.
+      </p>
+      <p>
+          During my missions at BNP Paribas and Equanimity, I implemented advanced predictive models, designed natural language processing solutions, and optimized data workflows for complex environments. My academic background at CY-Tech and a semester abroad at Anglia Ruskin University strengthened my skills in statistics and programming, allowing me to successfully execute various projects, from sentiment analysis to storage consumption prediction.
+      </p>
+      <p>
+          Motivated by the desire to bring innovative solutions, I am looking for a position where I can continue to grow, collaborate with multidisciplinary teams, and apply my technical skills to meet strategic business needs.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light" id="projects">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/6.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Classification of Real vs AI-Generated Images</h5>
+              <p class="card-text">This project aims to develop a model capable of distinguishing real images from AI-generated images. As part of this project, I designed a CNN (Convolutional Neural Network) model from scratch and optimized its hyperparameters. Additionally, I developed a second model based on transfer learning using a ResNet architecture.</p>
+              <a href="https://github.com/Jasydom/DeepDetect" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Sentiment Analysis on Vaccines</h5>
+              <p class="card-text">This project focuses on analyzing public sentiment about different vaccines using various parameters such as hashtags, popularity, user verification status, and tweet engagement. The objective is to identify the characteristics of key users and measure the general public's sentiment towards each vaccine.</p>
+              <a href="https://github.com/Jasydom/VaxTweetSentiment" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Sports Recognition Based on Movement Detection in Videos</h5>
+              <p class="card-text">The objective of this project is to automatically recognize the sport being played in a video by analyzing the movements of participants. For this project, we used CNNs to extract spatial features of the movements, followed by RNNs to capture temporal dynamics, enabling the recognition of the sport being played in the video.</p>
+              <a href="https://github.com/Jasydom/SportRec" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Project 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/4.jpg" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+              <h5 class="card-title">Diabetes Prediction</h5>
+              <p class="card-text">This project uses advanced machine learning techniques, such as ensemble learning and algorithms like Random Forest, Logistic Regression, and SVM, to predict diabetes. By exploring different performance metrics and testing multiple models, the objective is to achieve optimal predictions and understand the factors influencing diabetes risk.</p>
+              <a href="https://github.com/Jasydom/MLDiabetes" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/5.jpg" class="card-img-top" alt="Project 5">
+            <div class="card-body">
+              <h5 class="card-title">EPS Extraction</h5>
+              <p class="card-text">This project aims to extract Earnings Per Share (EPS) data from financial reports in HTML using web scraping and regex techniques. By leveraging BeautifulSoup for HTML parsing and a series of regex models to identify EPS values, the objective is to develop a reliable method for extracting financial information.</p>
+              <a href="https://github.com/Jasydom/ScrapingEPS" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/1.jpg" class="card-img-top" alt="Project 6">
+            <div class="card-body">
+              <h5 class="card-title">Titanic Survival Prediction</h5>
+              <p class="card-text">This project explores and analyzes the use of machine learning algorithms such as RandomForest to predict the survival of Titanic passengers. By focusing on the application and performance of this model, the objective is to understand how various factors influence survival chances.</p>
+              <a href="https://github.com/Jasydom/TitanicRandomForest" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Project 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/7.jpg" class="card-img-top" alt="Project 7">
+            <div class="card-body">
+              <h5 class="card-title">Pizza Delivery Optimization</h5>
+              <p class="card-text">This project focuses on maximizing pizza deliveries by modeling a city as an NxN grid. By applying graph theory concepts and optimized algorithms, it identifies the block receiving the most deliveries within a large urban network. The emphasis is on reducing complexity to efficiently handle large datasets.</p>
+              <a href="https://github.com/Jasydom/livery-pizzeria" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 8 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/8.jpg" class="card-img-top" alt="Project 8">
+            <div class="card-body">
+              <h5 class="card-title">Metaheuristic Optimization</h5>
+              <p class="card-text">This project aims to optimize task allocation in a distributed network using metaheuristic algorithms such as Firefly or PSO. Based on cost and execution time data for each task and node, the objective is to minimize resource usage while maximizing efficiency.</p>
+              <a href="https://github.com/Jasydom/Fireflymeta" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 9 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/9.jpg" class="card-img-top" alt="Project 9">
+            <div class="card-body">
+              <h5 class="card-title">Fake News Detection</h5>
+              <p class="card-text">This project uses NLP models such as DistilBERT, BERT, RNN, and LSTM to detect fake news from various datasets. By leveraging advanced preprocessing and fine-tuning techniques, the objective is to improve the accuracy and robustness of the models against diverse and complex data.</p>
+              <a href="https://github.com/Jasydom/FakeNewsNLP" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!---Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <p><i class="fas fa-envelope"></i> pro.montaigne.a@gmail.com</p>
+        </div>
+        <div class="col-lg-6">
+          <a href="https://linkedin.com/in/adrien-montaigne/" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light btn-sm ml-2" onclick="location.href='index.html'" id="bouton">Français</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
+  
