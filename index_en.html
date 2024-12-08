@@ -67,6 +67,29 @@
   max-height: 180px; /* Adjust this value to fit the image properly in the card */
   object-fit: cover; /* This makes sure the image covers the area properly */
 }
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.card {
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
 .card-body {
   padding: 15px;
   flex-grow: 1;
@@ -76,6 +99,7 @@
 }
 .card-title {
   font-size: 1.25rem;
+  text-align: center;
 }
 .card-text {
   margin-bottom: 15px;
@@ -141,7 +165,12 @@ html {
 .navbar-nav .nav-link:hover {
   color: #f8f9fa; /* Slightly lighter white when hovering over links */
 }
-  
+
+.card-img-top {
+  width: 100%; /* Utilise toute la largeur de la carte */
+  height: 200px; /* Hauteur fixe pour toutes les images */
+  object-fit: cover; /* Assure que l'image s'adapte sans distorsion */
+}
 
 /* Media query for responsive navbar collapsing */
 @media (max-width: 992px) {
@@ -284,8 +313,50 @@ html {
             </div>
           </div>
         </div> 
-      </div>
+
+        <!-- Project 10 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/10.jpg" class="card-img-top" alt="Project 10">
+            <div class="card-body">
+              <h5 class="card-title">Music Genre Recognition</h5>
+              <p class="card-text">
+                This project uses machine learning models (SVM, KNN, Random Forest) to classify music into genres, utilizing the GTZAN dataset. Audio features are extracted using Librosa and organized with Pandas to train the models.
+              </p>
+              <a href="https://github.com/Jasydom/GenreMusic" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 11 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/11.jpg" class="card-img-top" alt="Project 11">
+            <div class="card-body">
+              <h5 class="card-title">Bitcoin Price Prediction</h5>
+              <p class="card-text">
+                This project aims to predict Bitcoin prices using historical data collected via the Binance API, covering the period from August 2017 to July 2023. Predictive models, including neural networks, are used to analyze trends and anticipate market fluctuations.
+              </p>
+              <a href="https://github.com/Jasydom/BitcoinPredic" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 12 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/12.jpg" class="card-img-top" alt="Project 12">
+            <div class="card-body">
+              <h5 class="card-title">Bounding Box Detection for Birds</h5>
+              <p class="card-text">
+                This project uses transfer learning on pre-trained models to predict bounding boxes around birds in images. After data preparation, the goal is to optimize object localization through computer vision techniques and model training.
+              </p>
+              <a href="https://github.com/Jasydom/BoxBird" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
     </div>
+
   </section>
 
   <!---Contact Me Section -->
