@@ -170,6 +170,28 @@ html {
   height: 200px; /* Hauteur fixe pour toutes les images */
   object-fit: cover; /* Assure que l'image s'adapte sans distorsion */
 }
+
+@media (max-width: 1000px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-md-4 {
+    width: 90%; /* Chaque carte occupe presque toute la largeur */
+    margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
+  }
+@media (max-width: 768px) {
+.projects-section .card {
+  margin: 0 auto; /* Centre les cartes horizontalement */
+  max-width: 95%; /* Légère marge pour éviter les bords */
+}
+}
+}
+
   
 
 
