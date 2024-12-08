@@ -173,9 +173,18 @@ html {
 }
 
 /* Media query for responsive navbar collapsing */
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   .navbar-collapse {
     background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-md-4 {
+    width: 90%; /* Chaque carte occupe presque toute la largeur */
+    margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
   }
 }
 
