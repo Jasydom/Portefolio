@@ -169,10 +169,7 @@ html {
     flex-direction: column;
     align-items: center;
   }
-  .col-md-4 {
-    width: 90%; /* Chaque carte occupe presque toute la largeur */
-    margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
-  }
+  
 @media (max-width: 768px) {
     .col-md-4 {
         width: 600px; /* Force les cartes à occuper 100% de la largeur */
@@ -182,6 +179,7 @@ html {
         }
 
     .card {
+        width: 600px;
         border-radius: 0; /* Optionnel : enlève les coins arrondis pour un rendu plus "plein écran" */
         margin-bottom: 20px; /* Ajoute un léger espacement entre les cartes */
     }
