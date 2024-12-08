@@ -168,20 +168,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
   
-@media (max-width: 768px) {
-    .col-md-4 {
-        width: 600px; /* Force les cartes à occuper 100% de la largeur */
-        margin: 0; /* Supprime les marges externes */
-        padding: 0; /* Supprime les padding internes */
-        max-width: 100%; /* S'assure qu'il n'y a pas de restriction sur la largeur */
-        }
-
-    .card {
-        width: 600px;
-        border-radius: 0; /* Optionnel : enlève les coins arrondis pour un rendu plus "plein écran" */
-        margin-bottom: 20px; /* Ajoute un léger espacement entre les cartes */
-    }
 }
 }
