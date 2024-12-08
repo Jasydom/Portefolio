@@ -175,7 +175,7 @@ html {
   }
 @media (max-width: 768px) {
     .col-md-4 {
-        width: 100%; /* Force les cartes à occuper 100% de la largeur */
+        width: 600px; /* Force les cartes à occuper 100% de la largeur */
         margin: 0; /* Supprime les marges externes */
         padding: 0; /* Supprime les padding internes */
         max-width: 100%; /* S'assure qu'il n'y a pas de restriction sur la largeur */
