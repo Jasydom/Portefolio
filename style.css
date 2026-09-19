@@ -485,7 +485,10 @@ h1, h2, h3 {
   gap: 16px;
 }
 .skill { grid-column: span 2; }
-@media (max-width: 900px) { .skill { grid-column: span 3; } }
+@media (max-width: 900px) {
+  .skill { grid-column: span 3; }
+  .skill:last-child { grid-column: 1 / -1; }
+}
 @media (max-width: 560px) { .skill { grid-column: 1 / -1; } }
 .skill {
   padding: 24px;
@@ -575,6 +578,7 @@ h1, h2, h3 {
   gap: 20px;
   margin-top: 28px;
 }
+.featured-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* ---------- Parcours ---------- */
 .career-grid {
