@@ -61,23 +61,6 @@
     reveals.forEach((el) => el.classList.add("in"));
   }
 
-  /* ---------- Filtres de projets ---------- */
-  const filters = $$(".filter");
-  const cards = $$(".project");
-  const count = $("#count");
-
-  const applyFilter = (value) => {
-    let shown = 0;
-    cards.forEach((card) => {
-      const match = value === "all" || card.dataset.cat === value;
-      card.hidden = !match;
-      if (match) shown += 1;
-    });
-    filters.forEach((btn) => btn.setAttribute("aria-pressed", String(btn.dataset.filter === value)));
-    if (count) count.textContent = `${shown} ${shown > 1 ? count.dataset.many : count.dataset.one}`;
-  };
-  filters.forEach((btn) => btn.addEventListener("click", () => applyFilter(btn.dataset.filter)));
-
   /* ---------- Fond animé : réseau de neurones ---------- */
   const canvas = $("#net");
   if (!canvas || !canvas.getContext) return;

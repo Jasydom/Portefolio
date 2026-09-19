@@ -79,9 +79,10 @@
           <p>During my missions at <strong>BNP Paribas</strong>, <strong>Equanimity</strong> and <strong>Carrefour Banque</strong>, I implemented advanced predictive models, designed natural language processing solutions, and optimized data workflows for complex environments. My academic background at CY Tech and a semester abroad at Anglia Ruskin University strengthened my skills in statistics and programming, allowing me to successfully carry out various projects, from sentiment analysis to storage consumption prediction.</p>
         </div>
         <div class="stats">
-          <div class="stat reveal" style="--d:0.0s"><b>12</b><span>projects on GitHub</span></div>
-          <div class="stat reveal" style="--d:0.1s"><b>4</b><span>companies</span></div>
-          <div class="stat reveal" style="--d:0.2s"><b>1</b><span>semester abroad</span></div>
+          <div class="stat reveal" style="--d:0.0s"><b>4</b><span>companies</span></div>
+          <div class="stat reveal" style="--d:0.1s"><b>1</b><span>semester abroad</span></div>
+          <div class="stat reveal" style="--d:0.2s"><b>2039</b><span>FIDE rating in chess</span></div>
+          <div class="stat reveal" style="--d:0.3s"><b>14<sup>th</sup></b><span>at the French Junior Chess Championship</span></div>
         </div>
       </div>
     </section>
@@ -95,11 +96,11 @@
         </div>
         <div class="skills-grid">
           <div class="skill reveal" style="--d:0.00s"><h3>Machine Learning</h3><ul class="tags"><li>Random Forest</li><li>Logistic regression</li><li>SVM</li><li>KNN</li><li>Ensemble learning</li><li>Hyperparameter tuning</li><li>Propensity models</li></ul></div>
-          <div class="skill reveal" style="--d:0.06s"><h3>Deep Learning</h3><ul class="tags"><li>CNN</li><li>RNN / LSTM</li><li>Transfer learning (ResNet)</li><li>Neural networks</li><li>Computer vision</li></ul></div>
+          <div class="skill reveal" style="--d:0.06s"><h3>Deep Learning</h3><ul class="tags"><li>CNN</li><li>RNN / LSTM</li><li>Transfer learning (ResNet)</li><li>Neural networks</li><li>Computer vision</li><li>PyTorch</li></ul></div>
           <div class="skill reveal" style="--d:0.12s"><h3>NLP</h3><ul class="tags"><li>BERT / DistilBERT</li><li>Fine-tuning</li><li>Sentiment analysis</li><li>Fake news detection</li><li>Intelligent voice agent</li></ul></div>
-          <div class="skill reveal" style="--d:0.18s"><h3>Languages &amp; data</h3><ul class="tags"><li>Python</li><li>SQL</li><li>R</li><li>Pandas</li><li>Librosa</li><li>BeautifulSoup</li><li>Regex</li><li>Web scraping</li><li>Big Data</li></ul></div>
-          <div class="skill reveal" style="--d:0.24s"><h3>Data engineering &amp; BI</h3><ul class="tags"><li>Google Cloud Platform</li><li>BigQuery</li><li>Airflow</li><li>Docker</li><li>Git</li><li>SAS</li><li>Power BI</li><li>R Shiny</li><li>Looker</li></ul></div>
-          <div class="skill reveal" style="--d:0.30s"><h3>Optimization &amp; maths</h3><ul class="tags"><li>Statistics</li><li>Graph theory</li><li>Metaheuristics (Firefly, PSO)</li><li>Complexity reduction</li></ul></div>
+          <div class="skill reveal" style="--d:0.18s"><h3>Languages &amp; data</h3><ul class="tags"><li>Python</li><li>SQL</li><li>R</li><li>FastAPI</li><li>Pandas</li><li>Librosa</li><li>BeautifulSoup</li><li>Regex</li><li>Web scraping</li><li>Big Data</li></ul></div>
+          <div class="skill reveal" style="--d:0.24s"><h3>Data engineering &amp; BI</h3><ul class="tags"><li>Google Cloud Platform</li><li>Azure</li><li>BigQuery</li><li>Airflow</li><li>Docker</li><li>Git</li><li>SAS</li><li>Power BI</li><li>R Shiny</li><li>Looker</li></ul></div>
+          <div class="skill reveal" style="--d:0.30s"><h3>Optimization &amp; maths</h3><ul class="tags"><li>Statistics</li><li>Graph theory</li><li>Metaheuristics (Firefly, PSO)</li><li>Complexity reduction</li><li>Search algorithms (alpha-beta)</li></ul></div>
         </div>
       </div>
     </section>
@@ -109,138 +110,23 @@
         <div class="section-head reveal">
           <span class="eyebrow">Projects</span>
           <h2>Projects</h2>
-          <p>Data Science and AI projects, from NLP to computer vision. Each one comes with its source code on GitHub.</p>
+          <p>A chess player (2039 FIDE), I wrote my own engine.</p>
         </div>
-        <div class="filters reveal" role="group" aria-label="Filter projects by domain">
-          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" type="button" data-filter="vision" aria-pressed="false">Vision</button>
-          <button class="filter" type="button" data-filter="nlp" aria-pressed="false">NLP</button>
-          <button class="filter" type="button" data-filter="ml" aria-pressed="false">Machine Learning</button>
-          <button class="filter" type="button" data-filter="optim" aria-pressed="false">Optimization &amp; data</button>
-        </div>
-        <p class="count" id="count" aria-live="polite" data-one="project" data-many="projects">12 projects</p>
-        <div class="projects-grid">
-          <article class="project reveal" data-cat="vision" style="--d:0.00s">
-            <div class="project-top">
-              <div><span class="project-num">01</span><span class="project-cat">Computer vision</span></div>
-              <img class="project-thumb" src="images/thumbs/6.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Classification of real vs AI-generated images</h3>
-            <p>This project aims to develop a model capable of distinguishing real images from AI-generated images. As part of this project, I designed a CNN (Convolutional Neural Network) model from scratch and optimized its hyperparameters. Additionally, I developed a second model based on transfer learning using a ResNet architecture.</p>
-            <ul class="tags"><li>CNN</li><li>ResNet</li><li>Transfer learning</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/DeepDetect" target="_blank" rel="noopener">Source code<span class="sr-only"> — Classification of real vs AI-generated images</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="nlp" style="--d:0.05s">
-            <div class="project-top">
-              <div><span class="project-num">02</span><span class="project-cat">NLP</span></div>
-              <img class="project-thumb" src="images/thumbs/2.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Sentiment analysis on vaccines</h3>
-            <p>This project focuses on analyzing public sentiment about different vaccines using various parameters such as hashtags, popularity, user verification status, and tweet engagement. The objective is to identify the characteristics of key users and measure the general public&#x27;s sentiment towards each vaccine.</p>
-            <ul class="tags"><li>Sentiment analysis</li><li>Twitter</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/VaxTweetSentiment" target="_blank" rel="noopener">Source code<span class="sr-only"> — Sentiment analysis on vaccines</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="vision" style="--d:0.10s">
-            <div class="project-top">
-              <div><span class="project-num">03</span><span class="project-cat">Computer vision</span></div>
-              <img class="project-thumb" src="images/thumbs/3.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Sport recognition from video</h3>
-            <p>The objective of this project is to automatically recognize the sport being played in a video by analyzing the movements of participants. For this project, we used CNNs to extract spatial features of the movements, followed by RNNs to capture temporal dynamics, enabling the recognition of the sport being played in the video.</p>
-            <ul class="tags"><li>CNN</li><li>RNN</li><li>Video</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/SportRec" target="_blank" rel="noopener">Source code<span class="sr-only"> — Sport recognition from video</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="ml" style="--d:0.00s">
-            <div class="project-top">
-              <div><span class="project-num">04</span><span class="project-cat">Machine Learning</span></div>
-              <img class="project-thumb" src="images/thumbs/4.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Diabetes prediction</h3>
-            <p>This project uses advanced machine learning techniques, such as ensemble learning and algorithms like Random Forest, Logistic Regression, and SVM, to predict diabetes. By exploring different performance metrics and testing multiple models, the objective is to achieve optimal predictions and understand the factors influencing diabetes risk.</p>
-            <ul class="tags"><li>Random Forest</li><li>Logistic regression</li><li>SVM</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/MLDiabetes" target="_blank" rel="noopener">Source code<span class="sr-only"> — Diabetes prediction</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="optim" style="--d:0.05s">
-            <div class="project-top">
-              <div><span class="project-num">05</span><span class="project-cat">Optimization &amp; data</span></div>
-              <img class="project-thumb" src="images/thumbs/5.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>EPS extraction</h3>
-            <p>This project aims to extract Earnings Per Share (EPS) data from financial reports in HTML using web scraping and regex techniques. By leveraging BeautifulSoup for HTML parsing and a series of regex models to identify EPS values, the objective is to develop a reliable method for extracting financial information.</p>
-            <ul class="tags"><li>BeautifulSoup</li><li>Regex</li><li>Web scraping</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/ScrapingEPS" target="_blank" rel="noopener">Source code<span class="sr-only"> — EPS extraction</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="ml" style="--d:0.10s">
-            <div class="project-top">
-              <div><span class="project-num">06</span><span class="project-cat">Machine Learning</span></div>
-              <img class="project-thumb" src="images/thumbs/1.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Titanic survival prediction</h3>
-            <p>This project explores and analyzes the use of machine learning algorithms such as RandomForest to predict the survival of Titanic passengers. By focusing on the application and performance of this model, the objective is to understand how various factors influence survival chances.</p>
-            <ul class="tags"><li>Random Forest</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/TitanicRandomForest" target="_blank" rel="noopener">Source code<span class="sr-only"> — Titanic survival prediction</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="optim" style="--d:0.00s">
-            <div class="project-top">
-              <div><span class="project-num">07</span><span class="project-cat">Optimization &amp; data</span></div>
-              <img class="project-thumb" src="images/thumbs/7.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Pizza delivery optimization</h3>
-            <p>This project focuses on maximizing pizza deliveries by modeling a city as an NxN grid. By applying graph theory concepts and optimized algorithms, it identifies the block receiving the most deliveries within a large urban network. The emphasis is on reducing complexity to efficiently handle large datasets.</p>
-            <ul class="tags"><li>Graph theory</li><li>Algorithms</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/livery-pizzeria" target="_blank" rel="noopener">Source code<span class="sr-only"> — Pizza delivery optimization</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="optim" style="--d:0.05s">
-            <div class="project-top">
-              <div><span class="project-num">08</span><span class="project-cat">Optimization &amp; data</span></div>
-              <img class="project-thumb" src="images/thumbs/8.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Metaheuristic optimization</h3>
-            <p>This project aims to optimize task allocation in a distributed network using metaheuristic algorithms such as Firefly or PSO. Based on cost and execution time data for each task and node, the objective is to minimize resource usage while maximizing efficiency.</p>
-            <ul class="tags"><li>Firefly</li><li>PSO</li><li>Metaheuristics</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/Fireflymeta" target="_blank" rel="noopener">Source code<span class="sr-only"> — Metaheuristic optimization</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="nlp" style="--d:0.10s">
-            <div class="project-top">
-              <div><span class="project-num">09</span><span class="project-cat">NLP</span></div>
-              <img class="project-thumb" src="images/thumbs/9.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Fake news detection</h3>
-            <p>This project uses NLP models such as DistilBERT, BERT, RNN, and LSTM to detect fake news from various datasets. By leveraging advanced preprocessing and fine-tuning techniques, the objective is to improve the accuracy and robustness of the models against diverse and complex data.</p>
-            <ul class="tags"><li>DistilBERT</li><li>BERT</li><li>RNN</li><li>LSTM</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/FakeNewsNLP" target="_blank" rel="noopener">Source code<span class="sr-only"> — Fake news detection</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="ml" style="--d:0.00s">
-            <div class="project-top">
-              <div><span class="project-num">10</span><span class="project-cat">Machine Learning</span></div>
-              <img class="project-thumb" src="images/thumbs/10.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Music genre recognition</h3>
-            <p>This project uses machine learning models (SVM, KNN, Random Forest) to classify music into genres, utilizing the GTZAN dataset. Audio features are extracted using Librosa and organized with Pandas to train the models.</p>
-            <ul class="tags"><li>SVM</li><li>KNN</li><li>Random Forest</li><li>Librosa</li><li>Pandas</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/GenreMusic" target="_blank" rel="noopener">Source code<span class="sr-only"> — Music genre recognition</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="ml" style="--d:0.05s">
-            <div class="project-top">
-              <div><span class="project-num">11</span><span class="project-cat">Machine Learning</span></div>
-              <img class="project-thumb" src="images/thumbs/11.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Bitcoin price prediction</h3>
-            <p>This project aims to predict Bitcoin prices using historical data collected via the Binance API, covering the period from August 2017 to July 2023. Predictive models, including neural networks, are used to analyze trends and anticipate market fluctuations.</p>
-            <ul class="tags"><li>Neural networks</li><li>API Binance</li><li>Time series</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/BitcoinPredic" target="_blank" rel="noopener">Source code<span class="sr-only"> — Bitcoin price prediction</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-          <article class="project reveal" data-cat="vision" style="--d:0.10s">
-            <div class="project-top">
-              <div><span class="project-num">12</span><span class="project-cat">Computer vision</span></div>
-              <img class="project-thumb" src="images/thumbs/12.jpg" width="56" height="56" alt="" loading="lazy">
-            </div>
-            <h3>Bounding box detection for birds</h3>
-            <p>This project uses transfer learning on pre-trained models to predict bounding boxes around birds in images. After data preparation, the goal is to optimize object localization through computer vision techniques and model training.</p>
-            <ul class="tags"><li>Transfer learning</li><li>Object detection</li></ul>
-            <a class="project-link" href="https://github.com/Jasydom/BoxBird" target="_blank" rel="noopener">Source code<span class="sr-only"> — Bounding box detection for birds</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </article>
-        </div>
+        <article class="featured reveal">
+          <span class="featured-cat">Chess engine · Python</span>
+          <h3>ChessBot</h3>
+          <p class="featured-lead">A chess engine written in Python, playable in the browser, on Lichess and in the lab. python-chess only provides the rules: all the search and evaluation are written in the project.</p>
+          <div class="featured-grid">
+            <div class="fblock"><h4>Search</h4><ul><li>Negamax with alpha-beta pruning, time-bounded</li><li>Iterative deepening and transposition table</li><li>Move ordering: MVV-LVA, killers, history heuristic</li><li>Quiescence (delta pruning), null move pruning, Late Move Reductions</li></ul></div>
+            <div class="fblock"><h4>Evaluation</h4><ul><li>Material value and piece-square tables, interpolated between middlegame and endgame</li><li>King safety: pawn shelter, open files</li><li>Evaluation injectable into the search, to compare other approaches without duplicating alpha-beta</li></ul></div>
+            <div class="fblock"><h4>Playable anywhere</h4><ul><li><strong>Browser</strong>: FastAPI + chessboard.js, 3+2 blitz against four bot levels</li><li><strong>Lichess</strong>: UCI bridge and lichess-bot under Docker, with performance tracking per engine version</li><li><strong>Lab</strong>: bot-vs-bot arena to measure strength</li><li>Deployed on Azure Container Apps</li></ul></div>
+            <div class="fblock"><h4>Neural network evaluation<span class="badge">Prototype</span></h4><p>NNUE network (HalfKP 128×2-32-32, PyTorch) trained on Stockfish-analyzed positions from the Lichess evaluation dump (~22&nbsp;GB, streamed from Azure Blob Storage).</p><p>A research prototype, not deployed: at equal depth, it still loses to the classical evaluation.</p></div>
+          </div>
+          <div class="featured-foot">
+            <ul class="tags"><li>Python</li><li>python-chess</li><li>Alpha-beta</li><li>NNUE</li><li>PyTorch</li><li>FastAPI</li><li>Docker</li><li>Azure</li><li>Lichess</li></ul>
+            <a class="btn btn-primary" href="https://github.com/Jasydom/chessbot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> Source code</a>
+          </div>
+        </article>
       </div>
     </section>
 
